@@ -3,7 +3,9 @@ TINYALSA_PATH := external/tinyalsa/
 
 include $(CLEAR_VARS)
 
-ifeq ($(CFG_FM_SERVICE_TI), yes)
+BUILD_FM_RADIO = true
+
+ifeq ($(BUILD_FM_RADIO), true)
 
 #
 ## Kerenl FM Driver Test Application
